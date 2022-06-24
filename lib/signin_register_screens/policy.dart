@@ -25,7 +25,7 @@ class _User_Aggrement_ScreenState extends State<User_Aggrement_Screen> {
           'User Agreement',
           style: TextStyle(
               fontFamily: 'calibri',
-              color: Colors.blue,
+              color: Color.fromRGBO(252, 186, 24, 1),
               fontSize: 18,
               fontWeight: FontWeight.w800),
         ),
@@ -45,17 +45,19 @@ class _User_Aggrement_ScreenState extends State<User_Aggrement_Screen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Upon agreeing to LifeCapture Media’s User Agreement,'
-                        ' account members agree to upload only their own and personally '
-                        'shot video(s) to LifeCapture Media’s server for video transfer to user-specified '
-                        'disc format and to the shipping of said video only to a user-specified address.  In so doing,'
-                        ' the user asserts that any and all said uploaded video files do not meet any legal standard that'
-                        ' would constitute license, copyright or trademark infringement, piracy, bootlegging, surveillance or'
-                        ' anything constituting a violation of U.S. privacy rights/laws, material of any sexual or otherwise illicit '
-                        'nature, or video(s) that contain any invocation or the advocating of hate, violence, or aggression in any form,'
-                        ' or any material that would advance any political or religious narrative.  The user also acknowledges that '
-                        'LifeCapture Media reserves the right to refuse to transfer video, or take part in any project that would meet '
-                        'the legal standard to be classified as belonging to any category listed here.     ',
+                        'As a food delivery app, comchopp’s main function is to deliver food orders from merchants and safely to the customers. '
+                        'Its most important feature is calculating delivery time from the time a customer orders. '
+                        'For the app to be able to estimate the amount of time the delivery will take, a few things are considered.\n'
+                        '1.The amount of preparation and packaging time to get the food ready. This information is provided by the merchants.\n'
+                        '2.The amount of time* it takes the biker to leave his station, take the food from the restaurant and deliver it to the customer.\n'
+                        'time: Calculation of approximate delivery time depends on three things. \n'
+                        '1.The distance between a biker and the merchant.\n'
+                        '2.The distance between a merchant and the customer.\n'
+                        '3.Traffic between the merchant and biker.\n'
+                        '4.Traffic between the merchant and the customer.\n'
+                        'These distances are only attained if users provide access to their live location while using the app. '
+                        'This location sharing by Users is for three distinct reasons, all pertaining to the time and quality of the deliveries. '
+                        'Customers provide their current location so that Comchopp can recommend the nearest restaurants as well as calculate and display the delivery time needed. ',
                         textAlign: TextAlign.justify,
                         style: TextStyle(
                             color: Colors.black,
@@ -98,7 +100,7 @@ class _User_Aggrement_ScreenState extends State<User_Aggrement_Screen> {
                                 text: TextSpan(children: <TextSpan>[
                                   TextSpan(
                                     text:
-                                        'By proceeding I agree to LifeCapture Media’s\n',
+                                        'By proceeding I agree to Comchopp’s\n',
                                     style: TextStyle(
                                         fontSize: 13.57, color: Colors.black),
                                   ),
