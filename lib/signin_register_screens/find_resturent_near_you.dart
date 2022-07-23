@@ -142,7 +142,8 @@ class _find_resturentState extends State<find_resturent> {
             ),
             SizedBox(
               height: 10,
-            ),Consumer<api_calls>(builder: (context, provider, child) {
+            ),
+            Consumer<api_calls>(builder: (context, provider, child) {
               return Container(
                 decoration: BoxDecoration(
                   color: Color.fromRGBO(242, 242, 242, 1),
@@ -180,23 +181,11 @@ class _find_resturentState extends State<find_resturent> {
                     ),
                     debounceTime: 800,
                     isLatLngRequired: true,
-                    getPlaceDetailWithLatLng: (Prediction prediction) {
-                      print("placeDetails" +
-                          prediction.lat.toString() +
-                          prediction.lng.toString());
-                      provider.lat = prediction.lat;
-                      provider.long = prediction.lng;
-                      print(provider.lat);
-                      print(provider.long);
-                      print(address.text);
-                    },
+                    getPlaceDetailWithLatLng: (Prediction prediction) {},
                     itmClick: (Prediction prediction) async {
                       final _prefs = SharedPreferences.getInstance();
                       final SharedPreferences prefs = await _prefs;
-                      final latitude = prefs.setDouble(
-                          'latitude', double.parse('${provider.lat}'));
-                      final longitude = prefs.setDouble(
-                          'longtitude', double.parse('${provider.long}'));
+                      address.text = prediction.description!;
                       address.selection = TextSelection.fromPosition(
                           TextPosition(offset: prediction.description!.length));
                     }),

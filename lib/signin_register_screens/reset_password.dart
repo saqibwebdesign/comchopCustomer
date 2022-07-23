@@ -172,9 +172,7 @@ class _reset_passwordState extends State<reset_password> {
 
   void ResetForm() async {
     final multipartRequest = new http.MultipartRequest(
-        "POST",
-        Uri.parse(
-            "https://comchop.com/api/ResetPasswordForm"));
+        "POST", Uri.parse("https://comchop.com/api/ResetPasswordForm"));
 
     multipartRequest.fields.addAll({
       "password": _password.text,
@@ -189,8 +187,6 @@ class _reset_passwordState extends State<reset_password> {
       setState(() {
         visible = false;
       });
-    }
-    if (responseString == '{"success":"Your code has been matched! "}') {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (BuildContext context) => login_screen()),

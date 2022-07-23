@@ -26,11 +26,14 @@ class login_screen extends StatefulWidget {
 }
 
 class _login_screenState extends State<login_screen> {
-  bool _issObscure = true;
   var nam;
   var ema;
   var siin;
   bool visible = false;
+  final TextEditingController email = TextEditingController();
+  final TextEditingController password = TextEditingController();
+  final GlobalKey<FormState> _formkey = GlobalKey<FormState>();
+  bool _isObscure = true;
   @override
   Widget build(BuildContext context) {
     final provider = Provider.of<api_calls>(context);
@@ -54,10 +57,6 @@ class _login_screenState extends State<login_screen> {
       );
     }
 
-    final TextEditingController email = TextEditingController();
-    final TextEditingController password = TextEditingController();
-    final GlobalKey<FormState> _formkey = GlobalKey<FormState>();
-
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
@@ -66,7 +65,6 @@ class _login_screenState extends State<login_screen> {
             'Sign In',
             style: TextStyle(color: Colors.black),
           ),
-
           elevation: 0.0,
         ),
         body: SingleChildScrollView(
@@ -180,7 +178,7 @@ class _login_screenState extends State<login_screen> {
                             ),
                             width: 334,
                             child: TextFormField(
-                              obscureText: _issObscure,
+                              obscureText: _isObscure,
                               validator: (var value) {
                                 if (value!.isEmpty) {
                                   return "please enter pasword";
@@ -193,12 +191,15 @@ class _login_screenState extends State<login_screen> {
                               decoration: InputDecoration(
                                   suffixIcon: IconButton(
                                       color: Colors.grey,
-                                      icon: Icon(_issObscure
-                                          ? Icons.visibility
-                                          : Icons.visibility_off),
+                                      icon: Icon(
+                                        _isObscure
+                                            ? Icons.visibility
+                                            : Icons.visibility_off,
+                                        color: Colors.grey,
+                                      ),
                                       onPressed: () {
                                         setState(() {
-                                          _issObscure = !_issObscure;
+                                          _isObscure = !_isObscure;
                                         });
                                       }),
                                   prefixStyle: TextStyle(color: Colors.grey),
@@ -454,7 +455,6 @@ class _login_screenState extends State<login_screen> {
           },
         );
       }
-
     }
 
     siin = signs();

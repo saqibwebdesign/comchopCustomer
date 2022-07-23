@@ -20,10 +20,9 @@ class _create_acount_screenState extends State<create_acount_screen> {
   final TextEditingController _password = TextEditingController();
   final TextEditingController _phone = TextEditingController();
   final GlobalKey<FormState> _formkey = GlobalKey<FormState>();
+  bool _isObscure = true;
   @override
   Widget build(BuildContext context) {
-    bool _isObscure = true;
-
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
@@ -104,7 +103,6 @@ class _create_acount_screenState extends State<create_acount_screen> {
                         },
                         decoration: InputDecoration(
                             suffixStyle: TextStyle(color: Colors.grey),
-
                             prefixStyle: TextStyle(color: Colors.grey),
                             hintText: 'Full Name',
                             enabledBorder: OutlineInputBorder(
@@ -149,7 +147,6 @@ class _create_acount_screenState extends State<create_acount_screen> {
                         },
                         decoration: InputDecoration(
                             suffixStyle: TextStyle(color: Colors.grey),
-
                             prefixStyle: TextStyle(color: Colors.grey),
                             hintText: 'Email Address',
                             enabledBorder: OutlineInputBorder(
@@ -192,7 +189,6 @@ class _create_acount_screenState extends State<create_acount_screen> {
                         },
                         decoration: InputDecoration(
                             suffixStyle: TextStyle(color: Colors.grey),
-
                             prefixStyle: TextStyle(color: Colors.grey),
                             hintText: 'Phone Number',
                             enabledBorder: OutlineInputBorder(
@@ -234,12 +230,15 @@ class _create_acount_screenState extends State<create_acount_screen> {
                           }
                           return null;
                         },
-                        obscureText: true,
+                        obscureText: _isObscure,
                         decoration: InputDecoration(
                             suffixIcon: IconButton(
-                                icon: Icon(_isObscure
-                                    ? Icons.visibility
-                                    : Icons.visibility_off),
+                                icon: Icon(
+                                  _isObscure
+                                      ? Icons.visibility
+                                      : Icons.visibility_off,
+                                  color: Colors.grey,
+                                ),
                                 onPressed: () {
                                   setState(() {
                                     _isObscure = !_isObscure;
@@ -328,8 +327,7 @@ class _create_acount_screenState extends State<create_acount_screen> {
                       height: 10,
                     ),
                     InkWell(
-                      onTap: () {
-                      },
+                      onTap: () {},
                       child: Center(
                         child: Container(
                           height: 50,
@@ -349,7 +347,7 @@ class _create_acount_screenState extends State<create_acount_screen> {
                                 height: 20,
                                 width: 20,
                                 child: Image.network(
-                                  "https://dnpprojects.com/demo/comchop_mobileslider/icon/google.png",
+                                  "https://comchop.com/public/app/icon/google.png",
                                   height: 20,
                                   width: 20,
                                 ),
@@ -379,8 +377,8 @@ class _create_acount_screenState extends State<create_acount_screen> {
   }
 
   Future createaccount() async {
-    final multipartRequest = new http.MultipartRequest("POST",
-        Uri.parse("https://comchop.com/api/UserRegister"));
+    final multipartRequest = new http.MultipartRequest(
+        "POST", Uri.parse("https://comchop.com/api/UserRegister"));
 
     multipartRequest.fields.addAll({
       "name": _fname.text,

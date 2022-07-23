@@ -12,12 +12,29 @@ import 'package:Comchop/signin_register_screens/login_screen.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class Profile extends StatelessWidget {
-  const Profile({Key? key}) : super(key: key);
+class Profile extends StatefulWidget {
+  @override
+  State<Profile> createState() => _ProfileState();
+}
+
+class _ProfileState extends State<Profile> {
+  Future<void>? _launched;
+
+  Future<void> _launchInBrowser(Uri url) async {
+    if (!await launchUrl(
+      url,
+      mode: LaunchMode.externalApplication,
+    )) {
+      throw 'Could not launch $url';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
+    final Uri toLaunch = Uri.parse(
+        'https://play.google.com/store/apps/details?id=com.divsnpixel.comchop');
     final provider = Provider.of<api_calls>(context);
     return Scaffold(
       body: SafeArea(
@@ -147,32 +164,39 @@ class Profile extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Container(
-                child: ListTile(
-                  leading: Padding(
-                    padding: const EdgeInsets.only(top: 10),
-                    child: Icon(
-                      Icons.star,
-                      size: 20,
-                      color: Colors.orange,
+              InkWell(
+                onTap: () {
+                  setState(() {
+                    _launched = _launchInBrowser(toLaunch);
+                  });
+                },
+                child: Container(
+                  child: ListTile(
+                    leading: Padding(
+                      padding: const EdgeInsets.only(top: 10),
+                      child: Icon(
+                        Icons.star,
+                        size: 20,
+                        color: Colors.orange,
+                      ),
                     ),
-                  ),
-                  subtitle: Text(
-                    'Rate us playstore, appstor',
-                    style: TextStyle(
-                        color: Color.fromRGBO(134, 134, 134, 1),
+                    subtitle: Text(
+                      'Rate us playstore, appstor',
+                      style: TextStyle(
+                          color: Color.fromRGBO(134, 134, 134, 1),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400),
+                    ),
+                    title: Text(
+                      'Rate Us',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.w400,
                         fontSize: 16,
-                        fontWeight: FontWeight.w400),
-                  ),
-                  title: Text(
-                    'Rate Us',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.w400,
-                      fontSize: 16,
+                      ),
                     ),
+                    trailing: Icon(Icons.arrow_forward_ios_outlined),
                   ),
-                  trailing: Icon(Icons.arrow_forward_ios_outlined),
                 ),
               ),
               SizedBox(
@@ -248,10 +272,18 @@ class Profile extends StatelessWidget {
                       size: 20,
                     ),
                   ),
+                  subtitle: Text(
+                    'Log a user out',
+                    style: TextStyle(
+                        color: Color.fromRGBO(134, 134, 134, 1),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400),
+                  ),
                   title: Text(
-                    'Logout',
+                    'Log out',
                     style: TextStyle(
                       color: Colors.black,
+                      fontWeight: FontWeight.w400,
                       fontSize: 16,
                     ),
                   ),
