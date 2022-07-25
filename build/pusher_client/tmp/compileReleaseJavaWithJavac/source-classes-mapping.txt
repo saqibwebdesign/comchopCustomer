@@ -1,2 +1,0 @@
-com/github/chinloyal/pusher_client/BuildConfig.java
- com.github.chinloyal.pusher_client.BuildConfig
