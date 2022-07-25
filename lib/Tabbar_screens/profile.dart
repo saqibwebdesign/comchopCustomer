@@ -181,7 +181,7 @@ class _ProfileState extends State<Profile> {
                       ),
                     ),
                     subtitle: Text(
-                      'Rate us playstore, appstor',
+                      'Rate us playstore, appstore',
                       style: TextStyle(
                           color: Color.fromRGBO(134, 134, 134, 1),
                           fontSize: 16,
@@ -230,7 +230,7 @@ class _ProfileState extends State<Profile> {
 
                     AlertDialog alert = AlertDialog(
                       title: Text("Logout"),
-                      content: Text("Do you want to Logout?"),
+                      content: Text("Do you want to Log out?"),
                       actions: [
                         cancelButton,
                         // continueButton,
@@ -242,7 +242,7 @@ class _ProfileState extends State<Profile> {
                                 borderRadius: BorderRadius.circular(15)),
                             color: Color.fromRGBO(252, 186, 24, 1),
                             child: Text(
-                              'Logout',
+                              'Log out',
                               style: TextStyle(
                                 fontFamily: 'Roboto',
                                 color: Colors.white,

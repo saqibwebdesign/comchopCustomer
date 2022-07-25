@@ -1,0 +1,253 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.divsnpixel.comchop"
+4    android:versionCode="4"
+5    android:versionName="2.0.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:3:5-67
+11-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:4:5-79
+12-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:4:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:5:5-81
+13-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:5:22-78
+14    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+14-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:6:5-85
+14-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:6:22-82
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:3:5-67
+15-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:3:22-64
+16    <!-- #docregion android-queries -->
+17    <!-- Provide required visibility configuration for API level 30 and above -->
+18    <queries>
+18-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:10:3-29:13
+19
+20        <!-- If your app checks for SMS support -->
+21        <intent>
+21-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:12:5-15:14
+22            <action android:name="android.intent.action.VIEW" />
+22-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:13:7-59
+22-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:13:15-56
+23
+24            <data android:scheme="sms" />
+24-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:14:7-36
+24-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:14:13-33
+25        </intent>
+26        <!-- If your app checks for call support -->
+27        <intent>
+27-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:17:5-20:14
+28            <action android:name="android.intent.action.VIEW" />
+28-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:13:7-59
+28-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:13:15-56
+29
+30            <data android:scheme="tel" />
+30-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:14:7-36
+30-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:14:13-33
+31        </intent>
+32        <!-- #enddocregion android-queries -->
+33        <!--
+34         The "https" scheme is only required for integration tests of this package.
+35         It shouldn't be needed in most actual apps, or show up in the README!
+36        -->
+37        <intent>
+37-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:24:5-27:14
+38            <action android:name="android.intent.action.VIEW" />
+38-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:13:7-59
+38-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:13:15-56
+39
+40            <data android:scheme="https" />
+40-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:14:7-36
+40-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:14:13-33
+41        </intent>
+42        <!-- #docregion android-queries -->
+43    </queries>
+44
+45    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+45-->[:geolocator_android] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:7:5-77
+45-->[:geolocator_android] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:7:22-74
+46    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+46-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:7:5-81
+46-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:7:22-78
+47    <uses-permission android:name="android.permission.VIBRATE" />
+47-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:8:5-66
+47-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:8:22-63
+48    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+48-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:9:5-81
+48-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:9:22-78
+49    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" /> <!-- #enddocregion android-queries -->
+49-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:10:5-79
+49-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:10:22-76
+50    <application
+51        android:name="android.app.Application"
+51-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:35:9-42
+52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+52-->[androidx.core:core:1.6.0] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:24:18-86
+53        android:icon="@mipmap/ic_launcher"
+53-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:36:9-43
+54        android:label="Comchop" >
+54-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:34:9-32
+55        <activity
+55-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:37:9-57:20
+56            android:name="com.divsnpixel.comchop.MainActivity"
+56-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:38:13-41
+57            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+57-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:42:13-163
+58            android:exported="true"
+58-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:39:13-36
+59            android:hardwareAccelerated="true"
+59-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:43:13-47
+60            android:launchMode="singleTop"
+60-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:40:13-43
+61            android:theme="@style/LaunchTheme"
+61-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:41:13-47
+62            android:windowSoftInputMode="adjustResize" >
+62-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:44:13-55
+63
+64            <!--
+65                 Specifies an Android theme to apply to this Activity as soon as
+66                 the Android process has started. This theme is visible to the user
+67                 while the Flutter UI initializes. After that, this theme continues
+68                 to determine the Window background behind the Flutter UI.
+69            -->
+70            <meta-data
+70-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:49:13-52:17
+71                android:name="io.flutter.embedding.android.NormalTheme"
+71-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:50:15-70
+72                android:resource="@style/NormalTheme" />
+72-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:51:15-52
+73
+74            <intent-filter>
+74-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:53:13-56:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:54:17-68
+75-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:54:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:55:17-76
+77-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:55:27-74
+78            </intent-filter>
+79        </activity>
+80        <!--
+81             Don't delete the meta-data below.
+82             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+83        -->
+84        <meta-data
+84-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:60:9-62:33
+85            android:name="flutterEmbedding"
+85-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:61:13-44
+86            android:value="2" />
+86-->C:\Users\M.A COM\Desktop\Projects\comchopCustomer\android\app\src\main\AndroidManifest.xml:62:13-30
+87
+88        <service
+88-->[:geolocator_android] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:10:9-14:56
+89            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+89-->[:geolocator_android] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:11:13-77
+90            android:enabled="true"
+90-->[:geolocator_android] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:12:13-35
+91            android:exported="false"
+91-->[:geolocator_android] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:13:13-37
+92            android:foregroundServiceType="location" />
+92-->[:geolocator_android] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\geolocator_android\intermediates\library_manifest\release\AndroidManifest.xml:14:13-53
+93
+94        <receiver
+94-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:13:9-15:40
+95            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+95-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:14:13-97
+96            android:exported="false" />
+96-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:15:13-37
+97        <receiver
+97-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:16:9-25:20
+98            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+98-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:17:13-101
+99            android:exported="false" >
+99-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:18:13-37
+100            <intent-filter>
+100-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:19:13-24:29
+101                <action android:name="android.intent.action.BOOT_COMPLETED" />
+101-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:20:17-79
+101-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:20:25-76
+102                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+102-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:21:17-84
+102-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:21:25-81
+103                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+103-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:22:17-82
+103-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:22:25-79
+104                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+104-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:23:17-82
+104-->[:flutter_local_notifications] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:23:25-79
+105            </intent-filter>
+106        </receiver>
+107
+108        <activity
+108-->[:url_launcher_android] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:74
+109            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+109-->[:url_launcher_android] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:9:13-74
+110            android:exported="false"
+110-->[:url_launcher_android] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:10:13-37
+111            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+111-->[:url_launcher_android] C:\Users\M.A COM\Desktop\Projects\comchopCustomer\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:11:13-71
+112
+113        <uses-library
+113-->[androidx.window:window:1.0.0-beta04] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+114            android:name="androidx.window.extensions"
+114-->[androidx.window:window:1.0.0-beta04] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+115            android:required="false" />
+115-->[androidx.window:window:1.0.0-beta04] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+116        <uses-library
+116-->[androidx.window:window:1.0.0-beta04] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+117            android:name="androidx.window.sidecar"
+117-->[androidx.window:window:1.0.0-beta04] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+118            android:required="false" />
+118-->[androidx.window:window:1.0.0-beta04] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+119
+120        <activity
+120-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\dd3805d3c16996e3816e94ab5d78e349\jetified-play-services-auth-20.0.1\AndroidManifest.xml:23:9-27:75
+121            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+121-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\dd3805d3c16996e3816e94ab5d78e349\jetified-play-services-auth-20.0.1\AndroidManifest.xml:24:13-93
+122            android:excludeFromRecents="true"
+122-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\dd3805d3c16996e3816e94ab5d78e349\jetified-play-services-auth-20.0.1\AndroidManifest.xml:25:13-46
+123            android:exported="false"
+123-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\dd3805d3c16996e3816e94ab5d78e349\jetified-play-services-auth-20.0.1\AndroidManifest.xml:26:13-37
+124            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+124-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\dd3805d3c16996e3816e94ab5d78e349\jetified-play-services-auth-20.0.1\AndroidManifest.xml:27:13-72
+125        <!--
+126            Service handling Google Sign-In user revocation. For apps that do not integrate with
+127            Google Sign-In, this service will never be started.
+128        -->
+129        <service
+129-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\dd3805d3c16996e3816e94ab5d78e349\jetified-play-services-auth-20.0.1\AndroidManifest.xml:33:9-37:51
+130            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+130-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\dd3805d3c16996e3816e94ab5d78e349\jetified-play-services-auth-20.0.1\AndroidManifest.xml:34:13-89
+131            android:exported="true"
+131-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\dd3805d3c16996e3816e94ab5d78e349\jetified-play-services-auth-20.0.1\AndroidManifest.xml:35:13-36
+132            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+132-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\dd3805d3c16996e3816e94ab5d78e349\jetified-play-services-auth-20.0.1\AndroidManifest.xml:36:13-107
+133            android:visibleToInstantApps="true" />
+133-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\dd3805d3c16996e3816e94ab5d78e349\jetified-play-services-auth-20.0.1\AndroidManifest.xml:37:13-48
+134
+135        <activity
+135-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\642cc9e2632e586d1058ed231591ead4\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+136            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+136-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\642cc9e2632e586d1058ed231591ead4\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+137            android:exported="false"
+137-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\642cc9e2632e586d1058ed231591ead4\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+138            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+138-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\642cc9e2632e586d1058ed231591ead4\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+139
+140        <meta-data
+140-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\65c8b9154009d1931a3db50d7627d9e4\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+141            android:name="com.google.android.gms.version"
+141-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\65c8b9154009d1931a3db50d7627d9e4\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+142            android:value="@integer/google_play_services_version" />
+142-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\M.A COM\.gradle\caches\transforms-2\files-2.1\65c8b9154009d1931a3db50d7627d9e4\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+143    </application>
+144
+145</manifest>
